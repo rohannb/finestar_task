@@ -1,0 +1,20 @@
+//code written in c
+
+#include <stdio.h>
+
+int main() {
+    int i, j, k=97;				//k is 97 since 97 is ascii for 'a', incremented each print
+    for (i = 1; i <= 4; ++i) {			//external loop for lines
+
+        for(j=4;j>=i;--j){			//internal loop for spaces
+            printf("  ");
+        }
+
+        for(j=0;j<i;++j){			//internal loop for printing
+            printf("%c%d  ",k,i);
+            k++;    
+        }
+        printf("\n");
+    }
+    return 0;
+}
